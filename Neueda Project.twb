@@ -1,0 +1,853 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Selected Year' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;2016&quot;'>
+        <calculation class='tableau' formula='&quot;2016&quot;' />
+        <members>
+          <member value='&quot;2010&quot;' />
+          <member value='&quot;2011&quot;' />
+          <member value='&quot;2012&quot;' />
+          <member value='&quot;2013&quot;' />
+          <member value='&quot;2014&quot;' />
+          <member value='&quot;2015&quot;' />
+          <member value='&quot;2016&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='analysis' inline='true' name='federated.1ddnwwt1ulrstd18jo6sv1ykkwzz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='analysis' name='textscan.0rxfcxm0uqx9gp19yiwy115zwzee'>
+            <connection class='textscan' directory='C:/Users/Administrator/Downloads' filename='analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0rxfcxm0uqx9gp19yiwy115zwzee' name='analysis.csv' table='[analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='real' name='Days with AQI' ordinal='2' />
+            <column datatype='real' name='Good Days' ordinal='3' />
+            <column datatype='real' name='Moderate Days' ordinal='4' />
+            <column datatype='real' name='Unhealthy for Sensitive Groups Days' ordinal='5' />
+            <column datatype='real' name='Unhealthy Days' ordinal='6' />
+            <column datatype='real' name='Very Unhealthy Days' ordinal='7' />
+            <column datatype='real' name='Hazardous Days' ordinal='8' />
+            <column datatype='real' name='Max AQI' ordinal='9' />
+            <column datatype='real' name='90th Percentile AQI' ordinal='10' />
+            <column datatype='real' name='Median AQI' ordinal='11' />
+            <column datatype='real' name='Days CO' ordinal='12' />
+            <column datatype='real' name='Days NO2' ordinal='13' />
+            <column datatype='real' name='Days Ozone' ordinal='14' />
+            <column datatype='real' name='Days PM2.5' ordinal='15' />
+            <column datatype='real' name='Days PM10' ordinal='16' />
+            <column datatype='real' name='Total Average Percentage of EV Sales' ordinal='17' />
+            <column datatype='real' name='Total Average Percentage of Vehicle Sales' ordinal='18' />
+            <column datatype='real' name='Total Average Percentage of Non-EV Vehicle Sales' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0rxfcxm0uqx9gp19yiwy115zwzee' name='analysis.csv' table='[analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='real' name='Days with AQI' ordinal='2' />
+            <column datatype='real' name='Good Days' ordinal='3' />
+            <column datatype='real' name='Moderate Days' ordinal='4' />
+            <column datatype='real' name='Unhealthy for Sensitive Groups Days' ordinal='5' />
+            <column datatype='real' name='Unhealthy Days' ordinal='6' />
+            <column datatype='real' name='Very Unhealthy Days' ordinal='7' />
+            <column datatype='real' name='Hazardous Days' ordinal='8' />
+            <column datatype='real' name='Max AQI' ordinal='9' />
+            <column datatype='real' name='90th Percentile AQI' ordinal='10' />
+            <column datatype='real' name='Median AQI' ordinal='11' />
+            <column datatype='real' name='Days CO' ordinal='12' />
+            <column datatype='real' name='Days NO2' ordinal='13' />
+            <column datatype='real' name='Days Ozone' ordinal='14' />
+            <column datatype='real' name='Days PM2.5' ordinal='15' />
+            <column datatype='real' name='Days PM10' ordinal='16' />
+            <column datatype='real' name='Total Average Percentage of EV Sales' ordinal='17' />
+            <column datatype='real' name='Total Average Percentage of Vehicle Sales' ordinal='18' />
+            <column datatype='real' name='Total Average Percentage of Non-EV Vehicle Sales' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days with AQI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days with AQI]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Days with AQI</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Good Days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Good Days]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Good Days</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Moderate Days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Moderate Days]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Moderate Days</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unhealthy for Sensitive Groups Days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unhealthy for Sensitive Groups Days]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Unhealthy for Sensitive Groups Days</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unhealthy Days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unhealthy Days]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Unhealthy Days</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Very Unhealthy Days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Very Unhealthy Days]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Very Unhealthy Days</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hazardous Days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hazardous Days]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Hazardous Days</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max AQI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Max AQI]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Max AQI</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>90th Percentile AQI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[90th Percentile AQI]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>90th Percentile AQI</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median AQI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median AQI]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Median AQI</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days CO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days CO]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Days CO</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days NO2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days NO2]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Days NO2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days Ozone</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days Ozone]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Days Ozone</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days PM2.5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days PM2.5]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Days PM2.5</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days PM10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days PM10]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Days PM10</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Average Percentage of EV Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Average Percentage of EV Sales]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Total Average Percentage of EV Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Average Percentage of Vehicle Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Average Percentage of Vehicle Sales]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Total Average Percentage of Vehicle Sales</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Average Percentage of Non-EV Vehicle Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Average Percentage of Non-EV Vehicle Sales]</local-name>
+            <parent-name>[analysis.csv]</parent-name>
+            <remote-alias>Total Average Percentage of Non-EV Vehicle Sales</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Max AQI Each Year' datatype='real' name='[Calculation_220957894424051713]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF STR([Year]) == [Parameters].[Parameter 1] THEN [Max AQI]&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='EV Sales per Year' datatype='real' name='[Calculation_220957894431432706]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF STR([Year]) == [Parameters].[Parameter 1] THEN [Total Average Percentage of EV Sales]&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='State' datatype='string' name='[F2]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[analysis.csv_C82E6F9B069547CC9015DB0264FF24F5]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Selected Year' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;2016&quot;'>
+          <calculation class='tableau' formula='&quot;2016&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='analysis.csv' id='analysis.csv_C82E6F9B069547CC9015DB0264FF24F5'>
+            <properties context=''>
+              <relation connection='textscan.0rxfcxm0uqx9gp19yiwy115zwzee' name='analysis.csv' table='[analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='F2' ordinal='1' />
+                  <column datatype='real' name='Days with AQI' ordinal='2' />
+                  <column datatype='real' name='Good Days' ordinal='3' />
+                  <column datatype='real' name='Moderate Days' ordinal='4' />
+                  <column datatype='real' name='Unhealthy for Sensitive Groups Days' ordinal='5' />
+                  <column datatype='real' name='Unhealthy Days' ordinal='6' />
+                  <column datatype='real' name='Very Unhealthy Days' ordinal='7' />
+                  <column datatype='real' name='Hazardous Days' ordinal='8' />
+                  <column datatype='real' name='Max AQI' ordinal='9' />
+                  <column datatype='real' name='90th Percentile AQI' ordinal='10' />
+                  <column datatype='real' name='Median AQI' ordinal='11' />
+                  <column datatype='real' name='Days CO' ordinal='12' />
+                  <column datatype='real' name='Days NO2' ordinal='13' />
+                  <column datatype='real' name='Days Ozone' ordinal='14' />
+                  <column datatype='real' name='Days PM2.5' ordinal='15' />
+                  <column datatype='real' name='Days PM10' ordinal='16' />
+                  <column datatype='real' name='Total Average Percentage of EV Sales' ordinal='17' />
+                  <column datatype='real' name='Total Average Percentage of Vehicle Sales' ordinal='18' />
+                  <column datatype='real' name='Total Average Percentage of Non-EV Vehicle Sales' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='EV Sales per Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontname='Times New Roman' fontsize='20'>Total Average % of EV Sales per Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='analysis' name='federated.1ddnwwt1ulrstd18jo6sv1ykkwzz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Selected Year' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;2016&quot;'>
+              <calculation class='tableau' formula='&quot;2016&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ddnwwt1ulrstd18jo6sv1ykkwzz'>
+            <column caption='EV Sales per Year' datatype='real' name='[Calculation_220957894431432706]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF STR([Year]) == [Parameters].[Parameter 1] THEN [Total Average Percentage of EV Sales]&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='State' datatype='string' name='[F2]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total Average Percentage of EV Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_220957894431432706]' derivation='Sum' name='[sum:Calculation_220957894431432706:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='font-size' scope='cols' value='12' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-family' scope='rows' value='Times New Roman' />
+            <format attr='font-family' scope='cols' value='Times New Roman' />
+            <format attr='font-weight' scope='cols' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[sum:Calculation_220957894431432706:qk]</rows>
+        <cols>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[none:F2:nk]</cols>
+      </table>
+      <simple-id uuid='{F40E4A77-E3FA-494C-8E68-749A26F0AB9B}' />
+    </worksheet>
+    <worksheet name='Max AQI per Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Times New Roman' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='analysis' name='federated.1ddnwwt1ulrstd18jo6sv1ykkwzz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Selected Year' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;2016&quot;'>
+              <calculation class='tableau' formula='&quot;2016&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ddnwwt1ulrstd18jo6sv1ykkwzz'>
+            <column caption='Max AQI Each Year' datatype='real' name='[Calculation_220957894424051713]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF STR([Year]) == [Parameters].[Parameter 1] THEN [Max AQI]&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='State' datatype='string' name='[F2]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Max AQI]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_220957894424051713]' derivation='Sum' name='[sum:Calculation_220957894424051713:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='font-size' scope='cols' value='12' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-family' scope='rows' value='Times New Roman' />
+            <format attr='font-family' scope='cols' value='Times New Roman' />
+            <format attr='font-weight' scope='cols' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[sum:Calculation_220957894424051713:qk]</rows>
+        <cols>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[none:F2:nk]</cols>
+      </table>
+      <simple-id uuid='{AFD79EF5-DEA3-48FF-B13E-F9D863A6EEE8}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Max AQI per Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[none:F2:nk]</field>
+            <field>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{691DDC4A-5784-4A4E-9E53-1633F86BDCC5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='EV Sales per Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[none:F2:nk]</field>
+            <field>[federated.1ddnwwt1ulrstd18jo6sv1ykkwzz].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A6041A6C-DF72-488A-ABAB-BD1F1CC8A81C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='EV Sales per Year' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Max AQI per Year' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAWvUlEQVR4nO2daWwc53nH/3PsfXDJXd63SEm0otiSJVvO7cSOkTRJ67YOiiJF0aJokF4I
+      mqIf2rQogvRAm37okQZFkrYp0hxNHAeImyZpmtStE1mWbUWWxPvmUiR3l+Tex+wcbz+Q2t3h
+      ztImRe5SfJ8fYBj718uZZ56Z/8w7M+88r8AYYyAIThEbHQBBNBIyAME1ZADiyFJIb+DKS9ew
+      mUiBMQOVvXXDMHAQfXcyAHFkefbfvwzR7cX4+BS+9Y2vIhrPIBpZQyq5ga989WkUFAWx9U0Y
+      d3EbKx9gvARxoLzlXe/E5z7/WQxcfAyjP7qMs+cfxsv/911sxnSMrifgwyaujkfw1K/9Ns4N
+      BPe1DroCEEeWGzcn8M4n3gNoGkItfiQi8xhbisFpl+G2CRBlGaHe0+hpce97HQI9BiWOKowx
+      MMYgCALAGCAIpd87/y8Iwr7WceAGMAwDokgXFuLe4MCPVMMwDnqRBHFo0Kma4BoyAME1ZACC
+      a8gABNeQAQiuIQMQXHNPDoXYTOWxupkxaSe7W2C3SQ2KiLhXuScN8MJoGJ999ppJ+8ffex86
+      g74GRUTcq1AXiOAaMgDBNWQAgmvIAATXkAEIriEDEFxDBiC4hgxAcA0ZgOCavb0JZgwr4QW4
+      mjugZWJIFyV0Bj3YyGjo6QgdUogEcXjsyQC6VoTT14TIyjIEQ0Pv4AksLczDAQOZUBCe7aE4
+      jfrOnr7vJ/bKngwgigKSmwn0Dw4iGp7F6M0xeANeuGQRmgEYglGXb4Kt1qHrBnRdP/R1E8eL
+      PRlAU4tIphJgay7IAJpb29DiBiIpDSN2AQIkMMYgy4c7xs6q6oQkiYe+XuL4sacjxub04tz5
+      B7d/dZb0lraDDIkg6gc9BSK4hgxAcA0ZgOAaMgDBNWQAgmvIAATXkAEIriEDEFxDBiC4hgxA
+      cM2RHjzzwugyroyGTdpvPvlQg6IhjiNH2gALawk8d33RpH34py80KBriOEJdIIJryAAE15AB
+      CK4hAxBcQwYguIYMQHANGYDgGjIAwTVkAIJryAAE15ABCK4hAxBcQwYguIYMQHDN3qpDqwom
+      JyYgugMQ8nEoogdNdh2xVBHnz98PSTisMAnicNhbdWjZjo72NhQMGYoEeAwNGUgYbrchrjAE
+      ZB2GYUDTtAMJzqoKtKbpNapD6we2XoIf9mQANZfAjfFp9A0OIxuPoCh64bNrmIypON8lQBZk
+      aJp2YFWarapAy7JUozq0RNWhiT2zpyPG7mnGo+94+9aPvq7DiIcg6grdBBNcQwYguIYMQHAN
+      GYDgGjIAwTVkAIJryAAE15ABCK4hAxBcQwYguIYMQHANGYDgGjIAwTVkAIJryAAE15ABCK6p
+      aYD0+joKBqtnLARRd2oaQEmv4utf+ybGZ5frGQ9B1JWaBjB0IJ9NYiOerGc8BFFXan4TLEp2
+      9PV3Aezer3Vycy6Kv/i3503a7//iW3D+ZEeDIiKOCjUNYHfK0JgLzV5HPeM5FHTDQLagVmkE
+      YdkFYoyhmC0gPD+JeLZY75gIom5YXgFyiQiuL0Tw+ONPoKO9vd4xEUTdsDSAKMnQlCyWFhch
+      2ZzweZz1josg6oKlAWSnD+9+z/shUbFP4phjeQ9gszuQXpvHd77/fXoPQBxrLA2QS0Txw//6
+      PpKKWWeMIRJZg64zrIbnMDm7hGxqA/PLa6B3xsS9iGUXyB1ow2PvfT+kYBtSsXhJZ7qGZDqN
+      QCCIRCqPgaGTWFqch1tkyGjt8Epb7ayqN+8LVm0rZjArGYyxmutlVsvZpT3BDzXfA6i5OH50
+      YxwtoR50dbUBAETZBr/XDUCA1+PE2K1RuP1e2CQDhgEYggHGmOUBtx+slmPUWP5u691re4If
+      ahrA5W9CLjGBnv6TJU1XFcTWIkjnGVww0NzeiRYXQzStod0uQIAExhgkSTqQ4ATLMugiRLH6
+      5lwUxZrrtSqnvlt7gh9qGmB9aQVFGYisxYDT/QAAyebAG889WNU2EDq8AAniMLE0QGL1Nvwj
+      p/CIr5NuboljjaUB0uuruPZqGOvhPNp7+jF8sq/ecRFEXbA0QNd9D8DfOwz2CGB3uuodU93I
+      FooYnY+ZtBOdzQgF3A2KiKg3lgbIp9dx+fI1GAB6h8/ijaf7cRzfCUc2s/izL5qHSX/0qUt4
+      14ODDYqIqDeWL8KcDhcMXUOxqGIlHIZe76gIok5YGiB+exFtpy/gpx5/MyTJtreZ9AjiHsLS
+      AKHhs7CnlvDcCzcwcuakVROCOBZYGiCzvoKZxTUsjI4ho9NwAeL4Ytm7cXgDGOjrhJJKQS3Q
+      F2E8Mxlex2e++ZJJ+/AHLuANg20NiuhgsTSA3eXDhYffhAcfeoQGjFVQVHX8+qeeNWkfePMp
+      PPXomQZFdPgUFA0La+bKIHlFa1A0B0/N+9tEZAlXrt1Ex+AbcG5koI4hHV0YGBKZgknLF4/P
+      wcAjNesCMcbQ2tEFh40GjBHHl9rDodNJvPzKdZx54GFgqJ4hEfcyqqZjcmnDpHUEvQg1Hc23
+      67ULY8lODAx0QRSofi4PGAaDtuN+T5b2vu+TWQUf//wPTdqvvvccnnzbyF3Fd1hYGmAzPIVv
+      /c9lBFuD6Oz11DsmogH8+NYS/vqrL5i0v/rI4w2Kpn5YWjzQNYjH3vFmCFoBmk4DIYjji+UV
+      IL48hS988Wn09J9Ar3Ach8ER9zLjizHkKkpd9rT60d7i3deyLA3Q0ncfPv5HHwdg/VkicXhc
+      n17DZjpf+u1x2nDpTE8DIzp6fO7Za5hdKRdr+JX3nsOTbz1dVf/VJotw2HYfyWb5r4IgQpbp
+      wG8E33x+Atdn1kq/e9v8uHSmB5upPPJKeQeLooDOoK8RIR5JNN3Ahz75jEn7+bffh19+zwO7
+      /h0N9LxH+Of//Amev7FU+h3wOvGvf/hkzfaxRBbRRM6kjfQFIdEV3URdDfDpZ67i8q1w6XfA
+      68RnPva+eobADT94ZR5f+cEtk/alP/45eF32BkV0NKmrAQpFzdRPs8n0lploLNQFahDfuzqD
+      eLo8rqg14MFjF+hTzHpDBmgQ3706i7mKJxlvGGglAzSAY2WASDyLsQVzlYcLpzobFE19+Kdv
+      /wTfuTJd+i2KAr72iQ82MKK986FPPgOlYlTt4xdP4CM/c7Eu696bARhDNpeDy+1GMZeBJtrh
+      EA3kigaafI0fMjG1tI6/+foVk/ap33h3g6KpD7phQK34ak80juaLS1XT8Sf/8pxJe/TcAJ54
+      aAiqppu2oZ7zt+3JAIauYnZ+DqeGRzA7NwcDNsiyAb2ow/7GB+CiJ2xEDRhDVQ2m+/oaX1Nz
+      TwYQZTvaQi0QGIPL64es68gKAro8DDmVwSbpMAwDmmb9kUh1NWZWsy1gXWZd03RLXdd1yzOH
+      ruvQLcYz1dJ3i1/T9tZ+N3bmgm3ngrEd28Cwre9oz7baW+fIWtc1DZpmfZbSLb793i13qqpW
+      lakXhK117KRWjmrrux8XO3NhGLr1cthr75s9GUBXFawuLyOVY7DrBeQlL1rsGsIpDff3CRAg
+      Q9M0yLL1YoWqcUVCzbaAdVVnWZYsdUmSLF/ySJIESareuVt69WNYURRrxqRbFErdrT0A/N3T
+      LyKZLT/tGelvxQcfPVOVC2E7F8LO4ecCtvUd7YWt9tY5stYlWcbKRhbji+Yz8dvu74dkMfR5
+      K0fVGy1JEsKxDH73098z6R996hLuH6qeVLFWjmrrux8XO3MhipL1coTd9w2wRwNINgfOX7xU
+      pR+3eSRzBRX/cXnKpD1wsh0DHYE9L+vGbASxZPmNbKPffdyci+Kzz75i0qwOWl44Vk+BDopc
+      QcWX/vumSXPYpX0ZgDjakAGIY8+Pbi6Z7nE6gz6c6g0CIAMcGJHNjGkuBZdDRhPNr3wk+Ptv
+      XEWh4j3Duy+eIAMcNL/zt9+BopafmDzx0BB+62cfamBExOvhUAzwl1/+MUbno6XfPa1+/PmH
+      HzuMVRHEXXEoBsgWikhmy5MMN3mpvCKxd1JZBUbFM3+bLMLjPNjh3EeiC7SZyiOdLxtGgIC+
+      9qYGRkQcBT72D99DrOKjnkfO9OAPfumtB7qOI2GAp58bw7crBnRJooBn/vQXGhgRwQs0eofg
+      GjIAwTVkAIJbPvGF/yUDEPyyHE2RAQi+IQMQXEMGILiGDEBwDRmA4BoyAME1ZACCa8gABNeQ
+      AQiuIQMQXEMGILiGDEBwDRmA4BoyAME1+/skkjG8+vIVOFu6IShxbKZUPHjpIuxHszI3QdRk
+      398EO10uFPI5eDw+jDQxpBSGgLxVublWJeNa1aGNnRWRUbvCcV2qQ+u1Khm//urQbLsyMcOO
+      SsY1clGv6tCGUb0NmqbvuTp0Tf0gq0PvOFxKOb3L6tClfQC2vy4QA7ar7gqQjSJmo3k0O8rV
+      imtVMq5VHVrcWREZtSsc7686dHVB2l2rQ0u1Khm//mrSwnZlYgE7KhnXyEW9qkOLYvU2yLK0
+      S3Xo1587SZIg7akK9GtUh95xuJRyepfVoUv7AML+rgCCIGBo5Gzp98B+FkIQRwC6CSa4hgxA
+      cA0ZgOAaMgDBNWQAgmvIAATXkAEIriEDEFxDBiC4hgxAcA0ZgOAaMgDBNWQAgmvIAATXkAEI
+      riEDEFxDBiC4hgxAcA0ZgOAaMgDBNWQAgmvIAATXkAEIrrlrAyjZJFajmwcRC0HUnbs2wEJ4
+      BbmNVWSrK+URxJHnrg0gyTb4XDYUyQDEPchdG6DZ68S6akPAfhDhEER92Xd16DsEO3oQ7Niq
+      VqxvV4Ye7GgCq6hO3BbwQNd19Lb6cP+J1pLuddmh6zo6gx6TLgoCdF1HW5PLpAMAGEOLz1ml
+      y5IAv9tepTtsIgTIVbrHKcMui1V6wGOHKKJKD/qdYIZRpbcHXNB1HWcHW6FWVI/uDnmh6zpG
+      +oLozHpKel+bH7qu42R3M7zOcvr7OwLQdR2DHX5TBefWO7lrM+fOcyd3Lda5aw1U504AQ4vP
+      UZ070Tp3TrsEUajOhccpw2Grzl2Txw7Jon3Q7wRj1blra3Zb5y5YkbuWcu76233QdR3D3c3w
+      VOQu5HfCsNo3peWHUFSt9k0LBFZds3xf3FmMruuWlYMPWzcMw7IismEYEAShqqIwYwyMMcu/
+      adQ2HLXc3dmnxzl3B/YY9M5BJkkSBKYjnkwBAGLr62V9u40gCEimUiZdKxaQzuahFAowGEp6
+      Ih4HA6Aqeag6My0HANKpJDS9vDO0Yh5zM9NYXF4Dg1Aq135nfZX/iaKIXC4HXS0grxSRzSsA
+      YI6VGUimM1XbUCzkkMkVSjoYg6IoUBQFqqZXtddVBal01qTn0knEYjHkFfW1cwQgl80gnU4j
+      ncmZ2hcKBahKHhvxFICyntjcgKqXTwCvlbs7eiadRFGrOHEwHRvrMaxvJsC22+2WO2YYpVzo
+      2+vf0rWt+NNpFIrlbQaA6EoY0zOzyBUqc8FQKCjIpBLI5JSSns+moerMlCtJkmBoRRQUDYLA
+      kM3mTMtPJTYRi8VK2yVJEgS9ePDvAQRBAAQJgprDiy9ehWh3l3XGEN9cRzQaxdjktCnpY+Pj
+      WJ0fx2Q4CkEo6zOzU5ifm8PSwizi2WJJX5gex8TUDF4dnYAolhMxMzmNzoEhNAtxzMXyJX1+
+      ehxjY2MYGxtDIlMo6QsL88htruD22jpml6MlXVXyiEajiEZWsbAcKcVaSK3jJ9dv4vkrL5Vq
+      7QuCAKYpCIfDCIfD2wfi9jaoWbxy7TquX3sZG1nNpI/PraDJ78Xk5GRFjgxsbsQQjUYxMTVr
+      ypGmKri9OIcbEzMmfWp6GpMTE1i9vYi8qpd0t9OGFy9fxkJ4pWQEAFiYsc7d7fkpjE1M4dqN
+      MUjbJw5BELAwPQHD5oaQi2EhWj6RLCxu5W55R+50VUE8Hkc8HkdOKZZzZBjIZ1OYGBvF7chm
+      SVfTa4jmbBge7MPUdEUuChuYnF/F9NwSZmfLx8v66iKu3xjF2NgYIpvlXGfja7i9ngLTNczM
+      LZR0PbeBuZUkfB4nJiqPu/z6Ib0IYwYUVUd7exuy6ZTpnzweHzxOOwKBZpPudjohyA44bRIq
+      O2VDQ6cw0NeD1bUoHLbypayrbwBuuwi7LEGtmN2ks7MVS3NzWI7r6GpxlvRgawdOj5zB6VMn
+      4XWV79j7e7qwGs9DyWXQ1xEq6Yn4BmxQkWYenD01WNLtngB6O4PwuV3I5PIlXZBkNHvsiCXz
+      8LjL64XswvBAN+wOJ7RioSJHDE6HjGhsA3any5QLwzBgGAZODA5WqAwzk2MoMDv6ujtM7Zu9
+      ToS6B9Dc5IcslrsrK2tRXLx0CR1BP5hRTmpX76Bl7tq6+9HktsNhk1Gs6JPbnB4o6TjyKmCr
+      WH5/dxfiBRE2pqK3InfZ5Dpu3hpDIpUx9e2LuSRGJ2bR3NqBliZvOUWeIGRlA7Nz8wi1dZU3
+      zBFEk03B0OnT6O7sLMtON/x+L7xeLxy28r2AL9QDp57E1OwSTo+cNuVIloH1zSRcrop94woe
+      1ptghmw2Cy0dweJ6vkI3MHrjGuanRqGIHtNf9Pb1wS5LSCaSJn1teQ43b43B0dKNgNtW0pcW
+      l9EzMISRvhAS+XKSNxJZDJ86ieEuP6LJYknPJVNQGYOWWsX0SqJC34DgCSHoAuKZcqxasYBo
+      NIJoNIrM9uUdAPKpDegGINrdiMfLLwCZoSOvFCHAQFGtmJbH0JBIZeFvDsHnrnhUJjnQ5HFA
+      13UEmppM2+xwOOF0OuFwVD5aE9DdO4hmvxvGjumJvF4PVsMLKMIBW8VMLy0BP8ZHbyEcicNW
+      MbuN3eFE/+AQzp5oQyRR3raVpTlspHJoDYVMsxOJTMVGPIkikxDwlA+gfDqO6dl5pLNZ031C
+      oK0Xb3/Lw0jGVpAtlPcBYwwerw9ghmlKJqOQQTxbABMk2OSKQ7KYwcxCGJPjEyho5Yh8gRYw
+      tYBCQTHNCqSrBRQ1AxuRZcwurpTjt3vgsQG5TAqKVjEVlCDe/VMgSwQBfr8PiUIadrniBkqQ
+      cP/5C4iu3kYsmzX9yeL81uVeZTZUnGRw39nziEVWsbaZhqoZpQR5nCKmZ6ah5vIYOlPejCaP
+      HVNTUzDyOfTf11vSh04OYm52GoCIoROBkl7QAYdYhAbRNJ9UZ98wyuecShii8Qw6Q34kc+UD
+      UbQ50Tt4Er2DO5pLdvQPDFQvRrKht6+/WhdE+PxNFrqAju7eah2AAREejwc2aWv+K2n7YDQY
+      4PF44LRJ0AyjZI7kZgypbAG6pqGlvXxS6R0chmNtFeHlVQQ7y+vq7BuCHFlFOLyCptYu+Lb1
+      1u4TuOD0YmZmDkqF6ZPrt3Fr5jY6uvvhr7gaupracPqEgKWlMOxufzkV7macPTWApXAYGbsH
+      uHMxcfjx1jddwtzcDNLZ8slJtjngcjqg6eaTja4qiMY20NF3Eu1twYqUShCZAcnhwem+ihwy
+      7eCeAtWi1hMG67Y6UqkM/H4/RFF4zfa7PaWw0g8ExpDLZlDUDPib/BAPYx0NIjw7jsVIAqFQ
+      CP0DJ+Cyb101VpdmMBuOoiUYQv/AIDzOLdPEbi9geT2N5kATWkJt8FdcHazIJ6O4+uoEAs0h
+      9PT1IbjdDdJycfz4pZvwN7egu6cXbS3bJwAljSuvTiIYDMLfFEB7aKvbnEttYnUjBbsswRcI
+      IuDbus80dA25/FY3U7Y54HRsxWkUs5hdisDpsMHp8aP1zvKZfvgGIO4dDEOHsX2vIEpSydx3
+      7kmArQnpXs/JyQpW0fURRLHUfWGMlWadFATRcsK+w4IMQHANDYcmuIYMQHDN/wOKzvVBHMp4
+      gwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
